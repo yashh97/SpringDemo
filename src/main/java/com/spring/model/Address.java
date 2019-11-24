@@ -1,12 +1,15 @@
 package com.spring.model;
 
+import org.springframework.stereotype.Component;
+
 import lombok.Getter;
 import lombok.Setter;
 
+@Component
 @Getter@Setter
-public class UserAddress {
+public class Address {
 	
-	public UserAddress(String addrLine1, String addrLine2, Integer zipCode) {
+	public Address(String addrLine1, String addrLine2, Integer zipCode) {
 		super();
 		this.addrLine1 = addrLine1;
 		this.addrLine2 = addrLine2;

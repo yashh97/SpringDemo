@@ -1,16 +1,18 @@
-package com.spring.model;
+package com.spring.entity;
 
 import java.time.LocalDate;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Entity;
+
+import com.spring.model.Address;
 
 import lombok.Getter;
 import lombok.Setter;
 
-@Component
+@Entity
 @Getter@Setter
-public class UserModel 
-{
+public class UserEntity {
+
 	private String userName;
 	private String age;
 	private LocalDate dob;
